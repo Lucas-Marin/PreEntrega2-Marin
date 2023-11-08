@@ -22,3 +22,13 @@ while(palabra != "coderhouse"){
     alert("en serio?");
     palabra = prompt("Cual es el mejor lugar para aprender programacion?")
 }
+
+function adivina(numero){
+    numero = parseInt(prompt("del 1 al 10, que numero tengo programado?"))
+    while(numero != 8){
+        alert("que mal, intenta de nuevo")
+        numero = prompt("del 1 al 10, que numero tengo programado?")
+    }
+}
+
+adivina()
