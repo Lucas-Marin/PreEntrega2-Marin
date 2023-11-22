@@ -1,5 +1,5 @@
 
-let saludo = prompt("buen dia").toLowerCase() 
+let saludo = prompt("buen dia")
 // if-else -------------------------------------------------------
 if(saludo == "buen dia"){
     console.log("Bienvenido!!")
@@ -24,14 +24,13 @@ while(palabra != "coder"){
     palabra = prompt("Cual es el mejor lugar para aprender programacion?")
 } 
 // funcion ------------------------------------------------------
-function adivina(numero){
+function adivina(){
     numero = parseInt(prompt("del 1 al 10, que numero tengo programado?"))
     while(numero != 8){
         console.log("que mal, intenta de nuevo")
         numero = prompt("del 1 al 10, que numero tengo programado?")
     }
 } 
-
 adivina() 
 
 // objeto -----------------------------------------------------------
@@ -101,18 +100,18 @@ console.log(deposito[3].articulo)
 for(let i = 0; i < deposito.length ; i++){
     console.log(deposito[i].articulo + deposito[i].id + deposito[i].sector)
 }
-for(let socotroco of deposito){
-    console.log(socotroco.id)
-    console.log(socotroco.articulo)
-    console.log(socotroco.sector)
+for(let articulos of deposito){
+    console.log(articulos.id)
+    console.log(articulos.articulo)
+    console.log(articulos.sector)
 }
 
 //funciones superiores------------------------------------------
 
-let carritodecompra = ["pan", "salame", "queso", "mayonesa"]
+let ingredientes = ["pan", "salame", "queso", "mayonesa"]
 
-carritodecompra.forEach((sanguche) =>
-    console.log("comprar "+ sanguche)
+carritodecompra.forEach((ingrediente) =>
+    console.log("comprar "+ ingrediente)
 ) 
     // le acabo de decir a la funcion "sanguche" que me marque en consola, que tengo que comprar cada uno (for each) de los items de la lista (carrito de compra)
 
